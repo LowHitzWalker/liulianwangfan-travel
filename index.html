@@ -148,7 +148,33 @@ font-size:30px;
 }
 
 }
+.social-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
 
+.social-card{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.social-card:hover{
+transform:translateY(-5px);
+}
+
+.social-card h3{
+margin-bottom:10px;
+font-size:22px;
+}
+
+.social-card p{
+opacity:0.8;
+}
 </style>
 
 </head>
@@ -285,13 +311,30 @@ font-size:30px;
 
 <h2>联系我们</h2>
 
-<p>Facebook：刘连忘返 Hitz Walker</p>
+<div class="social-box">
 
-<p>Instagram：@hitzwalker520</p>
+<div class="social-card">
+<h3>Facebook</h3>
+<p>刘连忘返 Hitz Walker</p>
+<p>facebook.com/profile.php?id=61565845246211</p>
+</div>
 
-<p>TikTok：Hitz Walker</p>
+<div class="social-card">
+<h3>Instagram</h3>
+<p>@low_hitzwalker</p>
+</div>
 
-<p>WhatsApp：012-3456789</p>
+<div class="social-card">
+<h3>TikTok</h3>
+<p>Hitz Walker</p>
+</div>
+
+<div class="social-card">
+<h3>WhatsApp</h3>
+<p>012-3456789</p>
+</div>
+
+</div>
 
 </section>
 
