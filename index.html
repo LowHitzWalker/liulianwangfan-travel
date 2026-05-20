@@ -147,8 +147,41 @@ color:#d87c91;
 .footer p{
 margin:10px 0;
 }
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
+z-index:999;
+}
 
-@media(max-width:768px){
+.logo img{
+height:60px;
+object-fit:contain;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#d87c91;
+}@media(max-width:768px){
 
 .hero{
 height:85vh;
@@ -378,7 +411,7 @@ font-size:18px;
 
 <div class="social-card">
 <h3>Instagram</h3>
-<a href="https://instagram.com/low_hitzwalker" target="_blank">
+<a href="https://instagram.com/low_hitzwalker" target="_blank">style="text-decoration:none;color:#333;"
 @low_hitzwalker
 </a>
 </div>
