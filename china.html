@@ -66,7 +66,9 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
 }
 
-.card{
+.card{min-height:160px;
+display:flex;
+align-items:center;
 background:#fff;
 border-radius:20px;
 overflow:hidden;
@@ -74,7 +76,6 @@ box-shadow:0 10px 25px rgba(0,0,0,0.08);
 transition:0.3s;
 }
 
-.card:hover{
 transform:translateY(-5px);
 }
 
@@ -146,40 +147,58 @@ grid-template-columns:1fr;
 
 <div class="cards">
 
-<div class="card">
-<img src="beijiang.jpg">
-<div class="card-content">
-<h3><a href="beijiang.html">北疆</a></h3>
-<p>雪山草原｜喀纳斯｜禾木｜赛里木湖</p>
-</div>
-</div>
+<div class="cards">
 
 <div class="card">
-<img src="harbin.jpg">
 <div class="card-content">
-<h3><a href="harbin.html">哈尔滨</a></h3>
-<p>雪乡童话｜冰雪大世界｜长白山</p>
+<h3><a href="beijiang.html">🏔 北疆</a></h3>
+<p>喀纳斯｜禾木｜赛里木湖</p>
 </div>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1974&auto=format&fit=crop">
 <div class="card-content">
-<h3>重庆</h3>
-<p>山城夜景｜洪崖洞｜魔幻都市</p>
+<h3><a href="harbin.html">❄️ 哈尔滨</a></h3>
+<p>雪乡｜长白山｜冰雪大世界</p>
 </div>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1974&auto=format&fit=crop">
 <div class="card-content">
-<h3>云南</h3>
-<p>大理丽江｜香格里拉｜四季风光</p>
+<h3>🌆 重庆</h3>
+<p>洪崖洞｜山城夜景｜魔幻都市</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>🌿 云南</h3>
+<p>大理｜丽江｜香格里拉</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>🏯 西安</h3>
+<p>兵马俑｜古都文化｜回民街</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>🌸 贵州</h3>
+<p>黄果树｜苗寨｜梵净山</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>⛰ 桂林</h3>
+<p>阳朔｜漓江｜山水风光</p>
 </div>
 </div>
 
 </div>
-
 <a href="index.html" class="btn">返回首页</a>
 
 </section>
