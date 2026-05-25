@@ -167,6 +167,24 @@ font-size:26px;
 }
 .navbar{
 position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:92%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 35px;
+background:rgba(255,255,255,0.18);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,0.25);
+border-radius:22px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+z-index:999;
+transition:0.3s;
+}
+position:fixed;
 top:0;
 left:0;
 width:100%;
@@ -180,8 +198,9 @@ z-index:999;
 }
 
 .logo img{
-height:60px;
+height:55px;
 object-fit:contain;
+transition:0.3s;
 }
 
 .nav-links{
@@ -192,6 +211,13 @@ list-style:none;
 
 .nav-links a{
 text-decoration:none;
+color:#444;
+font-size:16px;
+font-weight:600;
+transition:0.3s;
+position:relative;
+}
+text-decoration:none;
 color:#333;
 font-size:16px;
 transition:0.3s;
@@ -199,6 +225,7 @@ transition:0.3s;
 
 .nav-links a:hover{
 color:#d87c91;
+transform:translateY(-2px);
 }@media(max-width:768px){
 
 .hero{
